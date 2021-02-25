@@ -1,5 +1,7 @@
 package com.htdp1.emp.empspring.demo.service;
 
+import java.util.List;
+
 import com.htdp1.emp.empspring.demo.mapper.TestMapper;
 import com.htdp1.emp.empspring.demo.vo.TestVo;
 
@@ -13,5 +15,9 @@ public class TestService {
 
     public TestVo selectEmployeeLimit1(long empNo) {
         return mapper.selectEmployeeLimit1(empNo);
+    }
+
+    public List<TestVo> selectEmployees() {
+        return mapper.selectEmployees();
     }
 }

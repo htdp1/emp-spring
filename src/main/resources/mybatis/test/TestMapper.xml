@@ -4,4 +4,7 @@
     <select id="selectEmployeeLimit1" resultType="com.htdp1.emp.empspring.demo.vo.TestVo">
         select emp_no, first_name, last_name from employees where emp_no = #{empNo}
     </select>
+    <select id="selectEmployees" resultType="com.htdp1.emp.empspring.demo.vo.TestVo">
+        select emp_no, first_name, last_name from employees
+    </select>
 </mapper>
