@@ -14,3 +14,4 @@ docker push htdp1/emp-spring:latest
 ## spring data REST 적용
 - Supported HTTP Method  
 https://docs.spring.io/spring-data/rest/docs/3.4.5/reference/html/#repository-resources.collection-resource
+  
