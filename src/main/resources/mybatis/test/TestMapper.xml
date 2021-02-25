@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.htdp1.emp.empspring.demo.mapper.TestMapper">
+    <select id="selectEmployeeLimit1" resultType="com.htdp1.emp.empspring.demo.vo.TestVo">
+        select emp_no, first_name, last_name from employees where emp_no = #{empNo}
+    </select>
+</mapper>

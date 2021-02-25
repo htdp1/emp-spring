@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  config:
+    import: 
+    - application-mariadb.yml
+  application:
+    name: emp-spring-local
+  # redis:
+  #   host: 127.0.0.1
+  #   port: 7000
