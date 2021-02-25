@@ -13,6 +13,6 @@ spring:
     - application-mariadb.yml
   application:
     name: emp-spring-local
-  # redis:
-  #   host: 127.0.0.1
-  #   port: 7000
+  data:
+    rest: 
+       base-path: "/"
