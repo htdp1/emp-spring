@@ -14,4 +14,8 @@ public class EmployeeService {
     public Employee selectEmployee(long empNo) {
         return mapper.findById(empNo);
     }
+
+    public int insertEmployee(Employee employee) {
+        return mapper.insert(employee);
+    }
 }

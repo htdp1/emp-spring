@@ -8,4 +8,5 @@ import org.apache.ibatis.annotations.Mapper;
 public interface EmployeeMapper {
 
     Employee findById(long empNo);
+    int insert(Employee employee);
 }

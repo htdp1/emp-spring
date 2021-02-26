@@ -14,6 +14,10 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.data.jdbc.repository.config.EnableJdbcRepositories;
 import org.springframework.data.jdbc.repository.config.MyBatisJdbcConfiguration;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.TransactionManager;
 
 @SpringBootApplication
 @Configuration
@@ -41,4 +45,14 @@ public class EmpSpringApplication {
 		
 		return sessionFactory.getObject();
 	}
+
+    @Bean
+    NamedParameterJdbcOperations namedParameterJdbcOperations(DataSource dataSource) { 
+        return new NamedParameterJdbcTemplate(dataSource);
+    }
+
+    @Bean
+    TransactionManager transactionManager(DataSource dataSource) {                     
+        return new DataSourceTransactionManager(dataSource);
+    }
 }

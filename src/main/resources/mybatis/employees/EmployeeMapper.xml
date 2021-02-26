@@ -4,7 +4,8 @@
     <select id="findById" resultType="com.htdp1.emp.empspring.employee.model.Employee">
         select emp_no, birth_date, first_name, last_name, gender, hire_date from employees where emp_no = #{empNo}
     </select>
-    <select id="findAll" resultType="com.htdp1.emp.empspring.employee.model.Employee">
-        select emp_no, birth_date, first_name, last_name, gender, hire_date from employees
-    </select>
+    <insert id="insert" parameterType="com.htdp1.emp.empspring.employee.model.Employee">
+        insert into employees (emp_no, birth_date, first_name, last_name, gender, hire_date)
+        values (#{empNo}, #{birthDate}, #{firstName}, #{lastName}, #{gender}, #{hireDate})
+    </insert>
 </mapper>
