@@ -16,3 +16,7 @@ spring:
   data:
     rest: 
        base-path: "/"
+
+logging:
+  level:
+    '[com.htdp1.emp.empspring]': debug
