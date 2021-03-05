@@ -1,4 +1,4 @@
-package com.htdp1.emp.empspring;
+package com.htdp1.empspring;
 
 import javax.sql.DataSource;
 

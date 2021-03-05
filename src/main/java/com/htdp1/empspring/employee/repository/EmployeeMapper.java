@@ -1,6 +1,6 @@
-package com.htdp1.emp.empspring.employee.repository;
+package com.htdp1.empspring.employee.repository;
 
-import com.htdp1.emp.empspring.employee.model.Employee;
+import com.htdp1.empspring.employee.model.Employee;
 
 import org.apache.ibatis.annotations.Mapper;
 

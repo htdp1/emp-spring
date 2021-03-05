@@ -1,8 +1,8 @@
-package com.htdp1.emp.empspring.demo.mapper;
+package com.htdp1.empspring.demo.mapper;
 
 import java.util.List;
 
-import com.htdp1.emp.empspring.demo.vo.TestVo;
+import com.htdp1.empspring.demo.vo.TestVo;
 
 import org.apache.ibatis.annotations.Mapper;
 

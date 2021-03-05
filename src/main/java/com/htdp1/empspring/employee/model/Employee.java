@@ -1,4 +1,4 @@
-package com.htdp1.emp.empspring.employee.model;
+package com.htdp1.empspring.employee.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;

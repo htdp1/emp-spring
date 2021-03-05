@@ -1,7 +1,7 @@
-package com.htdp1.emp.empspring.employee.config;
+package com.htdp1.empspring.employee.config;
 
-import com.htdp1.emp.empspring.employee.model.Employee;
-import com.htdp1.emp.empspring.employee.repository.EmployeeRepository;
+import com.htdp1.empspring.employee.model.Employee;
+import com.htdp1.empspring.employee.repository.EmployeeRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;

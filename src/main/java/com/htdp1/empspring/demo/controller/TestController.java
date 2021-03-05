@@ -1,9 +1,9 @@
-package com.htdp1.emp.empspring.demo.controller;
+package com.htdp1.empspring.demo.controller;
 
 import java.util.List;
 
-import com.htdp1.emp.empspring.demo.service.TestService;
-import com.htdp1.emp.empspring.demo.vo.TestVo;
+import com.htdp1.empspring.demo.service.TestService;
+import com.htdp1.empspring.demo.vo.TestVo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,8 +23,8 @@ public class TestController {
             return testService.selectEmployeeLimit1(empNo);
     }
 
-    @GetMapping(value = "/test")
-    @ResponseBody
+//     @GetMapping(value = "/test")
+//     @ResponseBody
     public List<TestVo> test() throws Exception {
             return testService.selectEmployees();
     }

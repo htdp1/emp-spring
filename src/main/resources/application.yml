@@ -19,4 +19,4 @@ spring:
 
 logging:
   level:
-    '[com.htdp1.emp.empspring]': debug
+    '[com.htdp1.empspring]': debug

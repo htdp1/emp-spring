@@ -1,4 +1,4 @@
-package com.htdp1.emp.empspring.demo.vo;
+package com.htdp1.empspring.demo.vo;
 
 public class TestVo {
     private String empNo;

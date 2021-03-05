@@ -1,4 +1,4 @@
-package com.htdp1.emp.empspring.rest.service;
+package com.htdp1.empspring.rest.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;

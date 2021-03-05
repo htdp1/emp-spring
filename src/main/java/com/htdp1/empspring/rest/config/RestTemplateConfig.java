@@ -1,4 +1,4 @@
-package com.htdp1.emp.empspring.rest.config;
+package com.htdp1.empspring.rest.config;
 
 import java.nio.charset.Charset;
 import java.time.Duration;

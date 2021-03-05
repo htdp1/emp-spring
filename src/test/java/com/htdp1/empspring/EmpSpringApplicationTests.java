@@ -1,4 +1,4 @@
-package com.htdp1.emp.empspring;
+package com.htdp1.empspring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

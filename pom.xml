@@ -7,11 +7,11 @@
 		<version>2.4.3</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.htdp1.emp</groupId>
+	<groupId>com.htdp1</groupId>
 	<artifactId>emp-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>emp-spring</name>
-	<description>Demo project for Spring Boot</description>
+	<description>emp-spring project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

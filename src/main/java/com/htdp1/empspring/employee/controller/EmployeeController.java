@@ -1,4 +1,4 @@
-package com.htdp1.emp.empspring.employee.controller;
+package com.htdp1.empspring.employee.controller;
 
 import java.util.Map;
 
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.htdp1.emp.empspring.employee.model.Employee;
-import com.htdp1.emp.empspring.employee.service.EmployeeService;
-import com.htdp1.emp.empspring.rest.service.RestService;
+import com.htdp1.empspring.employee.model.Employee;
+import com.htdp1.empspring.employee.service.EmployeeService;
+import com.htdp1.empspring.rest.service.RestService;
 
 import lombok.extern.slf4j.Slf4j;
 
