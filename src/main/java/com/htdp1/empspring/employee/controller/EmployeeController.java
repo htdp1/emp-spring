@@ -1,9 +1,6 @@
 package com.htdp1.empspring.employee.controller;
 
-import java.util.Map;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -14,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.htdp1.empspring.employee.model.Employee;
 import com.htdp1.empspring.employee.service.EmployeeService;
-import com.htdp1.empspring.rest.service.RestService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -25,9 +21,6 @@ public class EmployeeController {
 
     @Autowired
     EmployeeService employeeService;
-
-    @Autowired
-    RestService<Map<String, Object>> restService;
 
     @GetMapping(value = "/employees/{empNo}")
     @ResponseBody
@@ -44,17 +37,4 @@ public class EmployeeController {
         return employeeService.insertEmployee(employee);
     }
 
-    @GetMapping(value = "/template/employees/{empNo}")
-    @ResponseBody
-    public Map<String, Object> getEmployee(@PathVariable long empNo) throws Exception {
-    	log.debug("getEmployee");
-    	
-        return getEmployee();
-    }
-
-    private Map<String, Object> getEmployee() {
-    	log.debug("getEmployee restService");
-    	
-        return restService.get("http://localhost:8080" + "/v1/employees/10001", HttpHeaders.EMPTY).getBody();
-    }
 }

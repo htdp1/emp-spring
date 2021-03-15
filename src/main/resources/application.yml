@@ -1,5 +1,7 @@
 server:
   port: 8080
+  servlet:
+    context-path: /emp-spring
 
 management:
   endpoints:
@@ -15,7 +17,7 @@ spring:
     name: emp-spring-local
   data:
     rest: 
-       base-path: "/"
+       base-path: "/api"
 
 logging:
   level:
